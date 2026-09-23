@@ -1,0 +1,327 @@
+{
+    "$__mpe_config_返回主界面": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790153573717,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\返回主界面.json",
+            "savedViewport": {
+                "x": -1577,
+                "y": -387,
+                "zoom": 0.57
+            },
+            "filename": "返回主界面",
+            "version": "v1.10.1"
+        }
+    },
+    "下半部分处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    238,
+                    1123,
+                    244,
+                    147
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 3889,
+                "y": 860
+            }
+        }
+    },
+    "主界面特征1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    635,
+                    7,
+                    78,
+                    69
+                ],
+                "template": [
+                    "主界面特征1.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3887,
+                "y": -379
+            }
+        }
+    },
+    "主界面特征2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    316,
+                    1172,
+                    81,
+                    49
+                ],
+                "expected": [
+                    "任务"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4300,
+                "y": -380
+            }
+        }
+    },
+    "判断是否在主界面": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "主界面特征1",
+                    "主界面特征2"
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "next": [
+            "返回过头了吗",
+            "判断是否在主界面_第二次",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3900,
+                "y": 261
+            }
+        }
+    },
+    "判断是否在主界面_第二次": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "主界面特征1",
+                    "主界面特征2"
+                ]
+            }
+        },
+        "next": [
+            "已到达主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4256,
+                "y": 261
+            }
+        }
+    },
+    "取消退出游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    443,
+                    703,
+                    101,
+                    60
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4266,
+                "y": -24
+            }
+        }
+    },
+    "启动游戏开始": {
+        "next": [
+            "是否需要启动游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2190,
+                "y": 625
+            }
+        }
+    },
+    "已到达主界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4583,
+                "y": 313
+            }
+        }
+    },
+    "按Esc返回主界面": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111,
+                    4
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3860,
+                "y": 1490
+            }
+        }
+    },
+    "左下角返回箭头": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    9,
+                    1171,
+                    91,
+                    83
+                ],
+                "template": [
+                    "返回箭头图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3903,
+                "y": 1139
+            }
+        }
+    },
+    "无需启动游戏": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3036,
+                "y": 833
+            }
+        }
+    },
+    "是否需要启动游戏": {
+        "next": [
+            "需要启动游戏",
+            "无需启动游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2600,
+                "y": 651
+            }
+        }
+    },
+    "点击开始游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    284,
+                    982,
+                    144,
+                    83
+                ],
+                "expected": [
+                    "开始游戏"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 8000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3898,
+                "y": 557
+            }
+        }
+    },
+    "返回主界面开始": {
+        "next": [
+            "[JumpBack]返回过头了吗",
+            "判断是否在主界面",
+            "[JumpBack]点击开始游戏",
+            "[JumpBack]下半部分处理",
+            "[JumpBack]左下角返回箭头",
+            "[JumpBack]按Esc返回主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3517,
+                "y": 643
+            }
+        }
+    },
+    "返回过头了吗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    270,
+                    531,
+                    173,
+                    69
+                ],
+                "expected": [
+                    "退出游戏"
+                ]
+            }
+        },
+        "next": [
+            "取消退出游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3902,
+                "y": -36
+            }
+        }
+    },
+    "需要启动游戏": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.lilithgames.xgame.android.cn"
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3048,
+                "y": 452
+            }
+        }
+    }
+}

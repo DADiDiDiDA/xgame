@@ -1,0 +1,185 @@
+{
+    "$__mpe_config_领取任务奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -2963,
+                "y": -383,
+                "zoom": 0.57
+            },
+            "filename": "领取任务奖励",
+            "version": "v1.10.1"
+        }
+    },
+    "领取任务奖励开始": {
+        "next": [
+            "进入任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4948,
+                "y": 782
+            }
+        }
+    },
+    "进入任务界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    318,
+                    1167,
+                    85,
+                    56
+                ],
+                "expected": [
+                    "任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "进入循环任务分类",
+            "[JumpBack]进入任务界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5340,
+                "y": 769
+            }
+        }
+    },
+    "进入循环任务分类": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    332,
+                    1187,
+                    122,
+                    49
+                ],
+                "expected": [
+                    "循环任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "每日任务已完成",
+            "开始领取每日任务奖励",
+            "[JumpBack]进入循环任务分类_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5745,
+                "y": 844
+            }
+        }
+    },
+    "每日任务已完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    247,
+                    867,
+                    230,
+                    104
+                ],
+                "expected": [
+                    "任务已完成"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6203,
+                "y": 677
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_领取任务奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6961,
+                "y": 762
+            }
+        }
+    },
+    "开始领取每日任务奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ""
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6177,
+                "y": 1062
+            }
+        }
+    },
+    "进入任务界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    318,
+                    1167,
+                    85,
+                    56
+                ],
+                "expected": [
+                    "任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5654,
+                "y": 597
+            }
+        }
+    },
+    "进入循环任务分类_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    332,
+                    1187,
+                    122,
+                    49
+                ],
+                "expected": [
+                    "循环任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6028,
+                "y": 1295
+            }
+        }
+    }
+}

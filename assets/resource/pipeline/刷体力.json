@@ -1,0 +1,762 @@
+{
+    "$__mpe_config_刷体力": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790162642121,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\刷体力.json",
+            "savedViewport": {
+                "x": -6292,
+                "y": -806,
+                "zoom": 0.57
+            },
+            "filename": "刷体力",
+            "version": "v1.10.1"
+        }
+    },
+    "$__mpe_external_战斗准备界面处理开始_刷体力": {
+        "$__mpe_code": {
+            "position": {
+                "x": 13101,
+                "y": 843
+            }
+        }
+    },
+    "判断方法1-声之神迹": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "声之"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -44,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "判断是否到达关卡菜单-声波裂隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11482,
+                "y": 1307
+            }
+        }
+    },
+    "判断方法1-声波裂隙": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "声波"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -44,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "判断是否到达关卡菜单-声波裂隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11504,
+                "y": 774
+            }
+        }
+    },
+    "判断方法1-祭祀神迹": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "祭祀"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -44,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "判断是否到达关卡菜单-祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11552,
+                "y": 1914
+            }
+        }
+    },
+    "判断方法2-声之神迹": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    55,
+                    145,
+                    610,
+                    730
+                ],
+                "template": [
+                    "声之神迹.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "判断是否到达关卡菜单-声波裂隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11483,
+                "y": 1608
+            }
+        }
+    },
+    "判断方法2-声波裂隙": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    55,
+                    145,
+                    610,
+                    730
+                ],
+                "template": [
+                    "声波裂隙图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "判断是否到达关卡菜单-声波裂隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11492,
+                "y": 1005
+            }
+        }
+    },
+    "判断方法2-祭祀神迹": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    55,
+                    145,
+                    610,
+                    730
+                ],
+                "template": [
+                    "祭祀神迹图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "判断是否到达关卡菜单-祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11540,
+                "y": 2157
+            }
+        }
+    },
+    "判断是否到达关卡菜单-声波裂隙": {
+        "next": [
+            "是否到达关卡菜单-声波裂隙",
+            "选择刷取类型-刷体力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11905,
+                "y": 957
+            }
+        }
+    },
+    "判断是否到达关卡菜单-祭祀神迹": {
+        "next": [
+            "是否到达关卡菜单-祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11922,
+                "y": 2077
+            }
+        }
+    },
+    "刷体力开始": {
+        "next": [
+            "进入主菜单界面-刷体力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9783,
+                "y": 1554
+            }
+        }
+    },
+    "刷取：克洛诺斯-祭祀神迹": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    1099,
+                    633,
+                    42
+                ],
+                "expected": [
+                    "克洛诺斯"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -34,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]刷取：克洛诺斯-祭祀神迹_第二次",
+            "选择刷哪个类型结束-祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12993,
+                "y": 1679
+            }
+        }
+    },
+    "刷取：克洛诺斯-祭祀神迹_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    1099,
+                    633,
+                    42
+                ],
+                "expected": [
+                    "克洛诺斯"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -34,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 13315,
+                "y": 1695
+            }
+        }
+    },
+    "刷取：声之神迹": {
+        "next": [
+            "判断方法1-声之神迹",
+            "判断方法2-声之神迹",
+            "[JumpBack]新建节点85"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11129,
+                "y": 1504
+            }
+        }
+    },
+    "刷取：声波裂隙": {
+        "next": [
+            "判断方法1-声波裂隙",
+            "判断方法2-声波裂隙",
+            "[JumpBack]新建节点85"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11148,
+                "y": 989
+            }
+        }
+    },
+    "刷取：应龙-祭祀神迹": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    1099,
+                    633,
+                    42
+                ],
+                "expected": [
+                    "应龙"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -34,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]刷取：应龙-祭祀神迹_第二次",
+            "选择刷哪个类型结束-祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13015,
+                "y": 2596
+            }
+        }
+    },
+    "刷取：应龙-祭祀神迹_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    1099,
+                    633,
+                    42
+                ],
+                "expected": [
+                    "应龙"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -34,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 13358,
+                "y": 2651
+            }
+        }
+    },
+    "刷取：法芙娜-祭祀神迹": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    1099,
+                    633,
+                    42
+                ],
+                "expected": [
+                    "法芙娜"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -34,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]刷取：法芙娜-祭祀神迹_第二次",
+            "选择刷哪个类型结束-祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13001,
+                "y": 2279
+            }
+        }
+    },
+    "刷取：法芙娜-祭祀神迹_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    1099,
+                    633,
+                    42
+                ],
+                "expected": [
+                    "法芙娜"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -34,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 13304,
+                "y": 2317
+            }
+        }
+    },
+    "刷取：祭祀神迹": {
+        "next": [
+            "判断方法1-祭祀神迹",
+            "判断方法2-祭祀神迹",
+            "[JumpBack]新建节点85"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11137,
+                "y": 2010
+            }
+        }
+    },
+    "刷取：阿佩普-祭祀神迹": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    1099,
+                    633,
+                    42
+                ],
+                "expected": [
+                    "阿佩普"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -34,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]刷取：阿佩普-祭祀神迹_第二次",
+            "选择刷哪个类型结束-祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13007,
+                "y": 1983
+            }
+        }
+    },
+    "刷取：阿佩普-祭祀神迹_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    1099,
+                    633,
+                    42
+                ],
+                "expected": [
+                    "阿佩普"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -34,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 13295,
+                "y": 2024
+            }
+        }
+    },
+    "新建节点85": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    353,
+                    804,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        371,
+                        370,
+                        1,
+                        1
+                    ]
+                ],
+                "duration": [
+                    2500
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 11518,
+                "y": 2751
+            }
+        }
+    },
+    "是否到达关卡菜单-声波裂隙": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    323,
+                    1179,
+                    172,
+                    60
+                ],
+                "expected": [
+                    "准备"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]执行一次快速战斗",
+            "战斗结束返回主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12382,
+                "y": 890
+            }
+        }
+    },
+    "是否到达关卡菜单-祭祀神迹": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    323,
+                    1179,
+                    172,
+                    60
+                ],
+                "expected": [
+                    "准备"
+                ]
+            }
+        },
+        "next": [
+            "选择刷哪个类型-祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12299,
+                "y": 2063
+            }
+        }
+    },
+    "进入主菜单界面-刷体力": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    631,
+                    3,
+                    85,
+                    79
+                ],
+                "template": [
+                    "主界面特征1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]进入主菜单界面_第二次-刷体力",
+            "选择刷取类型-刷体力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10112,
+                "y": 1508
+            }
+        }
+    },
+    "进入主菜单界面_第二次-刷体力": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    631,
+                    3,
+                    85,
+                    79
+                ],
+                "template": [
+                    "主界面特征1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 10558,
+                "y": 1219
+            }
+        }
+    },
+    "选择刷取类型-刷体力": {
+        "next": [
+            "刷取：声波裂隙",
+            "刷取：声之神迹",
+            "刷取：祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10606,
+                "y": 1517
+            }
+        }
+    },
+    "选择刷哪个类型-祭祀神迹": {
+        "next": [
+            "刷取：克洛诺斯-祭祀神迹",
+            "刷取：阿佩普-祭祀神迹",
+            "刷取：法芙娜-祭祀神迹",
+            "刷取：应龙-祭祀神迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12624,
+                "y": 2084
+            }
+        }
+    },
+    "选择刷哪个类型结束-祭祀神迹": {
+        "next": [
+            "判断是否到达关卡菜单-声波裂隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13811,
+                "y": 2087
+            }
+        }
+    },
+    "执行一次快速战斗": {
+        "max_hit": 1,
+        "next": [
+            "战斗准备界面处理开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12700,
+                "y": 766
+            }
+        }
+    },
+    "战斗结束返回主界面": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12725,
+                "y": 1082
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_刷体力": {
+        "$__mpe_code": {
+            "position": {
+                "x": 13027,
+                "y": 1109
+            }
+        }
+    }
+}

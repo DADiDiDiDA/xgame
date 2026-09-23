@@ -1,0 +1,414 @@
+{
+    "$__mpe_config_友情点领取开始": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -2556,
+                "y": -455,
+                "zoom": 0.49
+            },
+            "filename": "友情点领取开始",
+            "version": "v1.10.1"
+        }
+    },
+    "友情点领取开始": {
+        "next": [
+            "进入好友界面-方法一",
+            "进入好友界面-方法二"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4552,
+                "y": 1048
+            }
+        }
+    },
+    "进入好友界面-方法一": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    635,
+                    88,
+                    63,
+                    431
+                ],
+                "expected": [
+                    "好友"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -32,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "已进入好友界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5069,
+                "y": 848
+            }
+        }
+    },
+    "选择好友列表分类": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    179,
+                    1178,
+                    144,
+                    62
+                ],
+                "expected": [
+                    "好友列表"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择好友列表分类_第二次",
+            "开始一键领取友情点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6004,
+                "y": 1114
+            }
+        }
+    },
+    "进入好友界面-方法二": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    635,
+                    88,
+                    63,
+                    431
+                ],
+                "template": [
+                    "好友图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "已进入好友界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5025,
+                "y": 1196
+            }
+        }
+    },
+    "开始一键领取友情点": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    241,
+                    1080,
+                    242,
+                    63
+                ],
+                "expected": [
+                    "一键领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]开始一键领取友情点_第二次",
+            "选择好友助战分类"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6482,
+                "y": 1103
+            }
+        }
+    },
+    "已进入好友界面": {
+        "next": [
+            "选择好友列表分类",
+            "[JumpBack]进入好友界面-方法一_第二次",
+            "[JumpBack]进入好友界面-方法二_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5586,
+                "y": 1145
+            }
+        }
+    },
+    "选择好友助战分类": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    477,
+                    1178,
+                    132,
+                    63
+                ],
+                "expected": [
+                    "好友助战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择好友助战分类_第二次",
+            "开始一键领取友情点100"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6902,
+                "y": 1136
+            }
+        }
+    },
+    "开始一键领取友情点100": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    253,
+                    1027,
+                    139,
+                    137
+                ],
+                "template": [
+                    "友情点图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "友情点已领取-任务结束",
+            "[JumpBack]开始一键领取友情点100_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7284,
+                "y": 1182
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_友情点领取开始": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8159,
+                "y": 1177
+            }
+        }
+    },
+    "进入好友界面-方法一_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    635,
+                    88,
+                    63,
+                    431
+                ],
+                "expected": [
+                    "好友"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -32,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5939,
+                "y": 1383
+            }
+        }
+    },
+    "进入好友界面-方法二_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    635,
+                    88,
+                    63,
+                    431
+                ],
+                "template": [
+                    "好友图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5896,
+                "y": 1731
+            }
+        }
+    },
+    "选择好友列表分类_第二次": {
+        "max_hit": 3,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    179,
+                    1178,
+                    144,
+                    62
+                ],
+                "expected": [
+                    "好友列表"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6332,
+                "y": 1393
+            }
+        }
+    },
+    "开始一键领取友情点_第二次": {
+        "max_hit": 3,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    241,
+                    1080,
+                    242,
+                    63
+                ],
+                "expected": [
+                    "一键领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6806,
+                "y": 1392
+            }
+        }
+    },
+    "选择好友助战分类_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    477,
+                    1178,
+                    132,
+                    63
+                ],
+                "expected": [
+                    "好友助战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7186,
+                "y": 875
+            }
+        }
+    },
+    "开始一键领取友情点100_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    253,
+                    1027,
+                    139,
+                    137
+                ],
+                "template": [
+                    "友情点图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7807,
+                "y": 1387
+            }
+        }
+    },
+    "友情点已领取-任务结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    267,
+                    1110,
+                    93,
+                    38
+                ],
+                "expected": [
+                    "已领取"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7680,
+                "y": 1058
+            }
+        }
+    }
+}

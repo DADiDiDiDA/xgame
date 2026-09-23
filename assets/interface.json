@@ -1,0 +1,311 @@
+{
+    "interface_version": 2,
+    "name": "Kes",
+    "description": "Kes自动化脚本 - 每日任务合集",
+    "contact": "",
+    "license": "MIT",
+    "welcome": "",
+    "version": "0.5.0",
+
+    "controller": [
+        {
+            "name": "安卓端",
+            "type": "Adb",
+            "display_short_side": 720
+        }
+    ],
+
+    "resource": [
+        {
+            "name": "官服",
+            "path": [
+                "./resource"
+            ]
+        }
+    ],
+
+    "task": [
+        {
+            "name": "🎮 进入游戏",
+            "entry": "启动游戏开始",
+            "default_check": true,
+            "doc": "自动启动游戏或跳过启动，并返回主界面",
+            "option": [
+                "是否需要启动游戏"
+            ]
+        },
+        {
+            "name": "🛒 购物中心日常领取",
+            "entry": "购物中心日常领取开始",
+            "default_check": true,
+            "doc": "进入购物中心领取免费礼包/日常奖励"
+        },
+        {
+            "name": "📮 友情点领取",
+            "entry": "友情点领取开始",
+            "default_check": true,
+            "doc": "进入好友界面领取友情点"
+        },
+        {
+            "name": "🚀 区域派遣",
+            "entry": "区域派遣开始",
+            "default_check": true,
+            "doc": "进入区域探索进行派遣并领取奖励"
+        },
+        {
+            "name": "🏛️ 联邦悬赏",
+            "entry": "联邦悬赏开始",
+            "default_check": true,
+            "doc": "进入联邦悬赏进行派遣/交付"
+        },
+        {
+            "name": "⚔️ 刷体力-声波裂隙",
+            "entry": "刷体力开始",
+            "default_check": true,
+            "option": [
+                "刷体力-声波裂隙"
+            ],
+            "doc": "默认刷取声波裂隙，可切换其他类型"
+        },
+        {
+            "name": "⚔️ 刷体力-声之神迹",
+            "entry": "刷体力开始",
+            "default_check": false,
+            "option": [
+                "刷体力-声之神迹"
+            ],
+            "doc": "默认刷取声之神迹，可切换其他类型"
+        },
+        {
+            "name": "⚔️ 刷体力-祭祀神迹",
+            "entry": "刷体力开始",
+            "default_check": false,
+            "option": [
+                "刷体力-祭祀神迹"
+            ],
+            "doc": "默认刷取祭祀神迹，可切换其他类型及具体目标"
+        },
+        {
+            "name": "📋 领取任务奖励",
+            "entry": "领取任务奖励开始",
+            "default_check": true,
+            "doc": "进入任务界面领取循环任务奖励"
+        }
+    ],
+
+    "option": {
+        "是否需要启动游戏": {
+            "type": "select",
+            "label": "是否需要启动游戏",
+            "default_case": "启动游戏",
+            "cases": [
+                {
+                    "name": "启动游戏",
+                    "label": "🚀 启动游戏",
+                    "pipeline_override": {
+                        "启动游戏开始": {
+                            "next": [
+                                "需要启动游戏"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "跳过启动",
+                    "label": "⏭️ 跳过启动",
+                    "pipeline_override": {
+                        "启动游戏开始": {
+                            "next": [
+                                "无需启动游戏"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+
+        "刷体力-声波裂隙": {
+            "type": "select",
+            "label": "副本类型",
+            "default_case": "声波裂隙",
+            "cases": [
+                {
+                    "name": "声波裂隙",
+                    "label": "🌊 声波裂隙",
+                    "pipeline_override": {
+                        "选择刷取类型-刷体力": {
+                            "next": [
+                                "刷取：声波裂隙"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "声之神迹",
+                    "label": "🔊 声之神迹",
+                    "pipeline_override": {
+                        "选择刷取类型-刷体力": {
+                            "next": [
+                                "刷取：声之神迹"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "祭祀神迹",
+                    "label": "🕯️ 祭祀神迹",
+                    "option": [
+                        "选择祭祀神迹关卡"
+                    ],
+                    "pipeline_override": {
+                        "选择刷取类型-刷体力": {
+                            "next": [
+                                "刷取：祭祀神迹"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+
+        "刷体力-声之神迹": {
+            "type": "select",
+            "label": "副本类型",
+            "default_case": "声之神迹",
+            "cases": [
+                {
+                    "name": "声波裂隙",
+                    "label": "🌊 声波裂隙",
+                    "pipeline_override": {
+                        "选择刷取类型-刷体力": {
+                            "next": [
+                                "刷取：声波裂隙"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "声之神迹",
+                    "label": "🔊 声之神迹",
+                    "pipeline_override": {
+                        "选择刷取类型-刷体力": {
+                            "next": [
+                                "刷取：声之神迹"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "祭祀神迹",
+                    "label": "🕯️ 祭祀神迹",
+                    "option": [
+                        "选择祭祀神迹关卡"
+                    ],
+                    "pipeline_override": {
+                        "选择刷取类型-刷体力": {
+                            "next": [
+                                "刷取：祭祀神迹"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+
+        "刷体力-祭祀神迹": {
+            "type": "select",
+            "label": "副本类型",
+            "default_case": "祭祀神迹",
+            "cases": [
+                {
+                    "name": "声波裂隙",
+                    "label": "🌊 声波裂隙",
+                    "pipeline_override": {
+                        "选择刷取类型-刷体力": {
+                            "next": [
+                                "刷取：声波裂隙"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "声之神迹",
+                    "label": "🔊 声之神迹",
+                    "pipeline_override": {
+                        "选择刷取类型-刷体力": {
+                            "next": [
+                                "刷取：声之神迹"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "祭祀神迹",
+                    "label": "🕯️ 祭祀神迹",
+                    "option": [
+                        "选择祭祀神迹关卡"
+                    ],
+                    "pipeline_override": {
+                        "选择刷取类型-刷体力": {
+                            "next": [
+                                "刷取：祭祀神迹"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+
+        "选择祭祀神迹关卡": {
+            "type": "select",
+            "label": "选择祭祀神迹关卡",
+            "default_case": "克洛诺斯",
+            "cases": [
+                {
+                    "name": "克洛诺斯",
+                    "label": "⏳ 克洛诺斯",
+                    "pipeline_override": {
+                        "选择刷哪个类型-祭祀神迹": {
+                            "next": [
+                                "刷取：克洛诺斯-祭祀神迹"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "阿佩普",
+                    "label": "🐍 阿佩普",
+                    "pipeline_override": {
+                        "选择刷哪个类型-祭祀神迹": {
+                            "next": [
+                                "刷取：阿佩普-祭祀神迹"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "法芙娜",
+                    "label": "🐉 法芙娜",
+                    "pipeline_override": {
+                        "选择刷哪个类型-祭祀神迹": {
+                            "next": [
+                                "刷取：法芙娜-祭祀神迹"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "应龙",
+                    "label": "🐲 应龙",
+                    "pipeline_override": {
+                        "选择刷哪个类型-祭祀神迹": {
+                            "next": [
+                                "刷取：应龙-祭祀神迹"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

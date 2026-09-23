@@ -1,0 +1,369 @@
+{
+    "$__mpe_config_区域派遣": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -6024,
+                "y": -469,
+                "zoom": 0.57
+            },
+            "filename": "区域派遣",
+            "version": "v1.10.1"
+        }
+    },
+    "区域派遣开始": {
+        "next": [
+            "进入主界面菜单-区域派遣"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9166,
+                "y": 1461
+            }
+        }
+    },
+    "进入主界面菜单-区域派遣": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    627,
+                    4,
+                    81,
+                    72
+                ],
+                "template": [
+                    "主界面特征1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "进入区域探索图标方法一-区域派遣",
+            "进入区域探索图标方法二-区域派遣",
+            "[JumpBack]进入主界面菜单-区域派遣_第二次",
+            "[JumpBack]主界面菜单滑动屏幕-区域派遣"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9732,
+                "y": 1355
+            }
+        }
+    },
+    "进入区域探索图标方法一-区域派遣": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    46,
+                    125,
+                    624,
+                    716
+                ],
+                "template": [
+                    "区域探索图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "已到达区域探索界面-区域派遣"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10282,
+                "y": 1007
+            }
+        }
+    },
+    "主界面菜单滑动屏幕-区域派遣": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    359,
+                    813,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        362,
+                        358,
+                        1,
+                        1
+                    ]
+                ],
+                "duration": [
+                    2500
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 10224,
+                "y": 2076
+            }
+        }
+    },
+    "进入区域探索图标方法二-区域派遣": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    125,
+                    624,
+                    716
+                ],
+                "expected": [
+                    "区域探索"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -37,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "已到达区域探索界面-区域派遣"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10289,
+                "y": 1372
+            }
+        }
+    },
+    "进入主界面菜单-区域派遣_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    627,
+                    4,
+                    81,
+                    72
+                ],
+                "template": [
+                    "主界面特征1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 10249,
+                "y": 1681
+            }
+        }
+    },
+    "已到达区域探索界面-区域派遣": {
+        "next": [
+            "剩余次数为0-区域派遣",
+            "[JumpBack]判断有没有待领取的奖励",
+            "[JumpBack]判断有没有可派遣的任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10894,
+                "y": 1293
+            }
+        }
+    },
+    "剩余次数为0-区域派遣": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    508,
+                    3,
+                    88,
+                    48
+                ],
+                "expected": [
+                    "0/4"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 11340,
+                "y": 820
+            }
+        }
+    },
+    "判断有没有待领取的奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    238,
+                    148,
+                    475,
+                    1015
+                ],
+                "expected": ""
+            }
+        },
+        "next": [
+            "判断有没有可领取的任务_判断1",
+            "判断有没有可领取的任务_判断2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11324,
+                "y": 1308
+            }
+        }
+    },
+    "判断有没有可派遣的任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    238,
+                    148,
+                    475,
+                    1015
+                ],
+                "template": [
+                    "区域探索可派遣图标.png"
+                ]
+            }
+        },
+        "next": [
+            "判断有没有可派遣的任务_判断1",
+            "判断有没有可派遣的任务_判断2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11287,
+                "y": 1957
+            }
+        }
+    },
+    "新建节点67": {
+        "$__mpe_code": {
+            "position": {
+                "x": 11211,
+                "y": 2444
+            }
+        }
+    },
+    "判断有没有可派遣的任务_判断1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    541,
+                    1019,
+                    152,
+                    125
+                ],
+                "template": [
+                    "区域探索可派遣图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 11780,
+                "y": 1789
+            }
+        }
+    },
+    "判断有没有可派遣的任务_判断2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    227,
+                    148,
+                    486,
+                    863
+                ],
+                "template": [
+                    "区域探索可派遣图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 11774,
+                "y": 2188
+            }
+        }
+    },
+    "判断有没有可领取的任务_判断1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    541,
+                    1019,
+                    152,
+                    125
+                ],
+                "template": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 11776,
+                "y": 1087
+            }
+        }
+    },
+    "判断有没有可领取的任务_判断2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    227,
+                    148,
+                    486,
+                    863
+                ],
+                "template": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 11770,
+                "y": 1487
+            }
+        }
+    }
+}

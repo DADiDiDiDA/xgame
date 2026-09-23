@@ -1,0 +1,373 @@
+{
+    "$__mpe_config_战斗准备界面处理": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790162544940,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\战斗准备界面处理.json",
+            "savedViewport": {
+                "x": -7318,
+                "y": -133,
+                "zoom": 0.49
+            },
+            "filename": "战斗准备界面处理",
+            "version": "v1.10.1"
+        }
+    },
+    "体力不足无法扫荡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    241,
+                    235,
+                    219,
+                    89
+                ],
+                "expected": [
+                    "体力补给"
+                ]
+            }
+        },
+        "next": [
+            "快速讨伐结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15938,
+                "y": 968
+            }
+        }
+    },
+    "开始快速讨伐": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    420,
+                    952,
+                    139,
+                    49
+                ],
+                "expected": [
+                    "快速讨伐"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认讨伐结束奖励",
+            "[JumpBack]讨伐正在执行",
+            "体力不足无法扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15564,
+                "y": 631
+            }
+        }
+    },
+    "开始讨伐次数增加": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    406,
+                    541,
+                    171,
+                    94
+                ],
+                "template": [
+                    "讨伐次数增加按钮.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 15142,
+                "y": 944
+            }
+        }
+    },
+    "战斗准备界面处理开始": {
+        "next": [
+            "选择快速战斗",
+            "竞技场相关挑战1",
+            "竞技场相关挑战2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13834,
+                "y": 928
+            }
+        }
+    },
+    "确认讨伐结束奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    147,
+                    1105,
+                    131,
+                    53
+                ],
+                "expected": [
+                    "关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "快速讨伐结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15968,
+                "y": 502
+            }
+        }
+    },
+    "竞技场相关挑战1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    115,
+                    1167,
+                    601,
+                    95
+                ],
+                "expected": [
+                    "快捷"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "是否需要跳过战斗",
+            "确认快捷战斗结果"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 14180,
+                "y": 1423
+            }
+        }
+    },
+    "讨伐次数调整为为3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    315,
+                    560,
+                    94,
+                    56
+                ],
+                "expected": [
+                    "3"
+                ]
+            }
+        },
+        "next": [
+            "开始快速讨伐"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15174,
+                "y": 625
+            }
+        }
+    },
+    "讨伐正在执行": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    57,
+                    88,
+                    299,
+                    86
+                ],
+                "expected": [
+                    "快速讨伐中"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 15938,
+                "y": 750
+            }
+        }
+    },
+    "调整讨伐次数开始": {
+        "next": [
+            "讨伐次数调整为为3",
+            "[JumpBack]开始讨伐次数增加"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 14683,
+                "y": 843
+            }
+        }
+    },
+    "选择快速战斗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    115,
+                    1172,
+                    590,
+                    72
+                ],
+                "expected": [
+                    "快速"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "调整讨伐次数开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 14360,
+                "y": 824
+            }
+        }
+    },
+    "是否需要跳过战斗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    109,
+                    473,
+                    506,
+                    124
+                ],
+                "expected": [
+                    "跳过"
+                ]
+            }
+        },
+        "next": [
+            "确认跳过战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 14711,
+                "y": 1337
+            }
+        }
+    },
+    "确认跳过战斗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    449,
+                    684,
+                    80,
+                    55
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "确认快捷战斗结果"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15071,
+                "y": 1357
+            }
+        }
+    },
+    "确认快捷战斗结果": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    445,
+                    1028,
+                    112,
+                    72
+                ],
+                "expected": [
+                    "返回"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 15396,
+                "y": 1634
+            }
+        }
+    },
+    "快速讨伐结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 16645,
+                "y": 746
+            }
+        }
+    },
+    "竞技场相关挑战2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    77,
+                    646,
+                    561,
+                    81
+                ],
+                "expected": [
+                    "快捷"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "是否需要跳过战斗",
+            "确认快捷战斗结果"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 14191,
+                "y": 1746
+            }
+        }
+    }
+}
