@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1790153573717,
+            "lastSyncTime": 1790309011269,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -1577,
-                "y": -387,
-                "zoom": 0.57
+                "x": -1512,
+                "y": 58,
+                "zoom": 0.5
             },
             "filename": "返回主界面",
             "version": "v1.10.1"
@@ -96,7 +96,7 @@
                 ]
             }
         },
-        "post_delay": 3000,
+        "post_delay": 6000,
         "next": [
             "返回过头了吗",
             "判断是否在主界面_第二次",
@@ -134,13 +134,13 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    443,
-                    703,
-                    101,
-                    60
+                    197,
+                    686,
+                    74,
+                    79
                 ],
                 "expected": [
-                    "确认"
+                    "取消"
                 ]
             }
         },
@@ -166,32 +166,6 @@
             }
         }
     },
-    "已到达主界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 4583,
-                "y": 313
-            }
-        }
-    },
-    "按Esc返回主界面": {
-        "action": {
-            "type": "ClickKey",
-            "param": {
-                "key": [
-                    111,
-                    4
-                ]
-            }
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 3860,
-                "y": 1490
-            }
-        }
-    },
     "左下角返回箭头": {
         "recognition": {
             "type": "TemplateMatch",
@@ -210,10 +184,56 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1500,
         "$__mpe_code": {
             "position": {
                 "x": 3903,
                 "y": 1139
+            }
+        }
+    },
+    "已到达主界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4583,
+                "y": 313
+            }
+        }
+    },
+    "按Esc返回主界面": {
+        "max_hit": 30,
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111,
+                    4
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3860,
+                "y": 1490
+            }
+        }
+    },
+    "按Esc返回主界面_第二次": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111,
+                    4
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3745,
+                "y": 2044
             }
         }
     },
@@ -267,13 +287,16 @@
         }
     },
     "返回主界面开始": {
+        "post_delay": 1500,
         "next": [
             "[JumpBack]返回过头了吗",
             "判断是否在主界面",
             "[JumpBack]点击开始游戏",
             "[JumpBack]下半部分处理",
             "[JumpBack]左下角返回箭头",
-            "[JumpBack]按Esc返回主界面"
+            "[JumpBack]按Esc返回主界面",
+            "[JumpBack]错误捕获",
+            "[JumpBack]按Esc返回主界面_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -304,6 +327,18 @@
             "position": {
                 "x": 3902,
                 "y": -36
+            }
+        }
+    },
+    "错误捕获": {
+        "max_hit": 1,
+        "action": {
+            "type": "Screencap"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3845,
+                "y": 1813
             }
         }
     },

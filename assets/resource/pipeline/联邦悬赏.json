@@ -3,13 +3,259 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790503957570,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\联邦悬赏.json",
             "savedViewport": {
-                "x": -8596,
-                "y": -667,
-                "zoom": 0.49
+                "x": -11435,
+                "y": -1345,
+                "zoom": 0.65
             },
             "filename": "联邦悬赏",
-            "version": "v1.10.1"
+            "version": "v2.0.0"
+        }
+    },
+    "$__mpe_anchor_判断需要点击哪个悬赏_联邦悬赏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 18992,
+                "y": 2685
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_联邦悬赏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 18461,
+                "y": 425
+            }
+        }
+    },
+    "判断剩余悬赏次数-联邦悬赏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    581,
+                    13,
+                    95,
+                    35
+                ],
+                "expected": [
+                    "0"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17914,
+                "y": 266
+            }
+        }
+    },
+    "判断剩余悬赏次数-联邦悬赏_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    581,
+                    13,
+                    95,
+                    35
+                ],
+                "expected": [
+                    "0"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 19028,
+                "y": 1208
+            }
+        }
+    },
+    "可执行派遣-联邦悬赏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    379,
+                    572,
+                    142,
+                    48
+                ],
+                "expected": [
+                    "选择代行者"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "next": [
+            "选择派遣角色-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 19097,
+                "y": 1850
+            }
+        }
+    },
+    "开始处理悬赏目标情况-联邦悬赏": {
+        "post_delay": 1500,
+        "next": [
+            "判断剩余悬赏次数-联邦悬赏_第二次",
+            "[JumpBack]悬赏目标已完成-联邦悬赏",
+            "[JumpBack]可执行派遣-联邦悬赏",
+            "派遣正在执行-联邦悬赏",
+            "是不是刷新到了故事",
+            "[Anchor][JumpBack]判断需要点击哪个悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 18646,
+                "y": 1767
+            }
+        }
+    },
+    "开始进入联邦悬赏界面-联邦悬赏": {
+        "next": [
+            "进入联邦悬赏界面：方法1-联邦悬赏",
+            "进入联邦悬赏界面：方法2-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 16501,
+                "y": 1449
+            }
+        }
+    },
+    "开始选择悬赏目标-联邦悬赏": {
+        "post_delay": 1500,
+        "next": [
+            "判断剩余悬赏次数-联邦悬赏",
+            "[JumpBack]进入联邦悬赏界面：方法1_第二次-联邦悬赏",
+            "[JumpBack]进入联邦悬赏界面：方法2_第二次-联邦悬赏",
+            "[JumpBack]选择悬赏目标：1",
+            "[JumpBack]选择悬赏目标：2",
+            "[JumpBack]选择悬赏目标：3",
+            "[JumpBack]选择悬赏目标：4",
+            "[JumpBack]选择悬赏目标：5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17336,
+                "y": 1466
+            }
+        }
+    },
+    "悬赏目标已完成-联邦悬赏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    410,
+                    562,
+                    91,
+                    58
+                ],
+                "expected": [
+                    "交付"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认悬赏目标奖励-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 19090,
+                "y": 1472
+            }
+        }
+    },
+    "派遣正在执行-联邦悬赏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    325,
+                    534,
+                    253,
+                    43
+                ],
+                "expected": [
+                    "预计剩余"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 19121,
+                "y": 2165
+            }
+        }
+    },
+    "确认开始派遣-联邦悬赏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    515,
+                    958,
+                    65,
+                    69
+                ],
+                "expected": [
+                    "派遣"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 19884,
+                "y": 1936
+            }
+        }
+    },
+    "确认悬赏目标奖励-联邦悬赏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    207,
+                    1152,
+                    293,
+                    104
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 19486,
+                "y": 1497
+            }
         }
     },
     "联邦悬赏开始": {
@@ -41,6 +287,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]进入主菜单界面_第二次-联邦悬赏",
             "开始进入联邦悬赏界面-联邦悬赏"
@@ -52,15 +299,29 @@
             }
         }
     },
-    "开始进入联邦悬赏界面-联邦悬赏": {
-        "next": [
-            "进入联邦悬赏界面：方法1-联邦悬赏",
-            "进入联邦悬赏界面：方法2-联邦悬赏"
-        ],
+    "进入主菜单界面_第二次-联邦悬赏": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    625,
+                    6,
+                    80,
+                    75
+                ],
+                "template": [
+                    "主界面特征1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 16501,
-                "y": 1449
+                "x": 16411,
+                "y": 1076
             }
         }
     },
@@ -100,513 +361,6 @@
             }
         }
     },
-    "进入联邦悬赏界面：方法2-联邦悬赏": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    46,
-                    148,
-                    616,
-                    739
-                ],
-                "template": [
-                    "联邦悬赏图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "开始选择悬赏目标-联邦悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 16872,
-                "y": 1618
-            }
-        }
-    },
-    "开始选择悬赏目标-联邦悬赏": {
-        "next": [
-            "判断剩余悬赏次数-联邦悬赏",
-            "[JumpBack]进入联邦悬赏界面：方法1_第二次-联邦悬赏",
-            "[JumpBack]进入联邦悬赏界面：方法2_第二次-联邦悬赏",
-            "[JumpBack]选择悬赏目标：1",
-            "[JumpBack]选择悬赏目标：2",
-            "[JumpBack]选择悬赏目标：3",
-            "[JumpBack]选择悬赏目标：4",
-            "[JumpBack]选择悬赏目标：5"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 17336,
-                "y": 1466
-            }
-        }
-    },
-    "悬赏目标已完成-联邦悬赏": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    410,
-                    562,
-                    91,
-                    58
-                ],
-                "expected": [
-                    "交付"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "确认悬赏目标奖励-联邦悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 19090,
-                "y": 1472
-            }
-        }
-    },
-    "确认悬赏目标奖励-联邦悬赏": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    207,
-                    1152,
-                    293,
-                    104
-                ],
-                "expected": [
-                    "点击"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 19486,
-                "y": 1497
-            }
-        }
-    },
-    "判断剩余悬赏次数-联邦悬赏": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    581,
-                    13,
-                    95,
-                    35
-                ],
-                "expected": [
-                    "0/6"
-                ]
-            }
-        },
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 17953,
-                "y": 284
-            }
-        }
-    },
-    "$__mpe_external_返回主界面开始_联邦悬赏": {
-        "$__mpe_code": {
-            "position": {
-                "x": 18461,
-                "y": 425
-            }
-        }
-    },
-    "选择悬赏目标：1": {
-        "max_hit": 1,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    109,
-                    774,
-                    25,
-                    31
-                ]
-            }
-        },
-        "anchor": {
-            "判断需要点击哪个悬赏": "选择悬赏目标：1_第二次"
-        },
-        "next": [
-            "开始处理悬赏目标情况-联邦悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 17861,
-                "y": 1248
-            }
-        }
-    },
-    "开始处理悬赏目标情况-联邦悬赏": {
-        "next": [
-            "派遣正在执行-联邦悬赏",
-            "[JumpBack]可执行派遣-联邦悬赏",
-            "[JumpBack]悬赏目标已完成-联邦悬赏",
-            "[Anchor][JumpBack]判断需要点击哪个悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 18646,
-                "y": 1767
-            }
-        }
-    },
-    "可执行派遣-联邦悬赏": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    379,
-                    572,
-                    142,
-                    48
-                ],
-                "expected": [
-                    "选择代行者"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "选择派遣角色-联邦悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 19097,
-                "y": 1850
-            }
-        }
-    },
-    "选择派遣角色-联邦悬赏": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    146,
-                    964,
-                    141,
-                    51
-                ],
-                "expected": [
-                    "一键选择"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "确认开始派遣-联邦悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 19494,
-                "y": 1850
-            }
-        }
-    },
-    "确认开始派遣-联邦悬赏": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    515,
-                    958,
-                    65,
-                    69
-                ],
-                "expected": [
-                    "派遣"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 19884,
-                "y": 1936
-            }
-        }
-    },
-    "派遣正在执行-联邦悬赏": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    325,
-                    534,
-                    253,
-                    43
-                ],
-                "expected": [
-                    "预计剩余"
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 19107,
-                "y": 2200
-            }
-        }
-    },
-    "选择悬赏目标：2": {
-        "max_hit": 1,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    213,
-                    780,
-                    26,
-                    22
-                ]
-            }
-        },
-        "anchor": {
-            "判断需要点击哪个悬赏": "选择悬赏目标：2_第二次"
-        },
-        "next": [
-            "开始处理悬赏目标情况-联邦悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 17822,
-                "y": 1590
-            }
-        }
-    },
-    "选择悬赏目标：3": {
-        "max_hit": 1,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    351,
-                    767,
-                    23,
-                    31
-                ]
-            }
-        },
-        "anchor": {
-            "判断需要点击哪个悬赏": "选择悬赏目标：3_第二次"
-        },
-        "next": [
-            "开始处理悬赏目标情况-联邦悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 17808,
-                "y": 1927
-            }
-        }
-    },
-    "选择悬赏目标：4": {
-        "max_hit": 1,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    482,
-                    773,
-                    31,
-                    31
-                ]
-            }
-        },
-        "anchor": {
-            "判断需要点击哪个悬赏": "选择悬赏目标：4_第二次"
-        },
-        "next": [
-            "开始处理悬赏目标情况-联邦悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 17822,
-                "y": 2206
-            }
-        }
-    },
-    "选择悬赏目标：5": {
-        "max_hit": 1,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    588,
-                    771,
-                    17,
-                    23
-                ]
-            }
-        },
-        "anchor": {
-            "判断需要点击哪个悬赏": "选择悬赏目标：5_第二次"
-        },
-        "next": [
-            "开始处理悬赏目标情况-联邦悬赏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 17822,
-                "y": 2517
-            }
-        }
-    },
-    "$__mpe_anchor_判断需要点击哪个悬赏_联邦悬赏": {
-        "$__mpe_code": {
-            "position": {
-                "x": 19017,
-                "y": 2500
-            }
-        }
-    },
-    "选择悬赏目标：1_第二次": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    109,
-                    774,
-                    25,
-                    31
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 18111,
-                "y": 1482
-            }
-        }
-    },
-    "选择悬赏目标：2_第二次": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    213,
-                    780,
-                    26,
-                    22
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 18117,
-                "y": 1760
-            }
-        }
-    },
-    "选择悬赏目标：3_第二次": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    351,
-                    767,
-                    23,
-                    31
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 18139,
-                "y": 2053
-            }
-        }
-    },
-    "选择悬赏目标：4_第二次": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    482,
-                    773,
-                    31,
-                    31
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 18116,
-                "y": 2368
-            }
-        }
-    },
-    "选择悬赏目标：5_第二次": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    588,
-                    771,
-                    17,
-                    23
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 18103,
-                "y": 2612
-            }
-        }
-    },
-    "进入主菜单界面_第二次-联邦悬赏": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    625,
-                    6,
-                    80,
-                    75
-                ],
-                "template": [
-                    "主界面特征1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 16503,
-                "y": 1140
-            }
-        }
-    },
     "进入联邦悬赏界面：方法1_第二次-联邦悬赏": {
         "recognition": {
             "type": "OCR",
@@ -640,6 +394,34 @@
             }
         }
     },
+    "进入联邦悬赏界面：方法2-联邦悬赏": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    46,
+                    148,
+                    616,
+                    739
+                ],
+                "template": [
+                    "联邦悬赏图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始选择悬赏目标-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 16872,
+                "y": 1618
+            }
+        }
+    },
     "进入联邦悬赏界面：方法2_第二次-联邦悬赏": {
         "recognition": {
             "type": "TemplateMatch",
@@ -662,6 +444,282 @@
             "position": {
                 "x": 17954,
                 "y": 879
+            }
+        }
+    },
+    "选择悬赏目标：1": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    109,
+                    774,
+                    25,
+                    31
+                ]
+            }
+        },
+        "anchor": {
+            "判断需要点击哪个悬赏": "选择悬赏目标：1_第二次"
+        },
+        "next": [
+            "开始处理悬赏目标情况-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17861,
+                "y": 1248
+            }
+        }
+    },
+    "选择悬赏目标：1_第二次": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    109,
+                    774,
+                    25,
+                    31
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 18111,
+                "y": 1482
+            }
+        }
+    },
+    "选择悬赏目标：2": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    213,
+                    780,
+                    26,
+                    22
+                ]
+            }
+        },
+        "anchor": {
+            "判断需要点击哪个悬赏": "选择悬赏目标：2_第二次"
+        },
+        "next": [
+            "开始处理悬赏目标情况-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17822,
+                "y": 1590
+            }
+        }
+    },
+    "选择悬赏目标：2_第二次": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    213,
+                    780,
+                    26,
+                    22
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 18117,
+                "y": 1760
+            }
+        }
+    },
+    "选择悬赏目标：3": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    351,
+                    767,
+                    23,
+                    31
+                ]
+            }
+        },
+        "anchor": {
+            "判断需要点击哪个悬赏": "选择悬赏目标：3_第二次"
+        },
+        "next": [
+            "开始处理悬赏目标情况-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17808,
+                "y": 1927
+            }
+        }
+    },
+    "选择悬赏目标：3_第二次": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    351,
+                    767,
+                    23,
+                    31
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 18139,
+                "y": 2053
+            }
+        }
+    },
+    "选择悬赏目标：4": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    482,
+                    773,
+                    31,
+                    31
+                ]
+            }
+        },
+        "anchor": {
+            "判断需要点击哪个悬赏": "选择悬赏目标：4_第二次"
+        },
+        "next": [
+            "开始处理悬赏目标情况-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17822,
+                "y": 2206
+            }
+        }
+    },
+    "选择悬赏目标：4_第二次": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    482,
+                    773,
+                    31,
+                    31
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 18116,
+                "y": 2368
+            }
+        }
+    },
+    "选择悬赏目标：5": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    588,
+                    771,
+                    17,
+                    23
+                ]
+            }
+        },
+        "anchor": {
+            "判断需要点击哪个悬赏": "选择悬赏目标：5_第二次"
+        },
+        "next": [
+            "开始处理悬赏目标情况-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17822,
+                "y": 2517
+            }
+        }
+    },
+    "选择悬赏目标：5_第二次": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    588,
+                    771,
+                    17,
+                    23
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 18103,
+                "y": 2612
+            }
+        }
+    },
+    "选择派遣角色-联邦悬赏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    146,
+                    964,
+                    141,
+                    51
+                ],
+                "expected": [
+                    "一键选择"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "next": [
+            "确认开始派遣-联邦悬赏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 19494,
+                "y": 1850
+            }
+        }
+    },
+    "是不是刷新到了故事": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    147,
+                    482,
+                    222,
+                    51
+                ],
+                "expected": [
+                    "故事"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 19103,
+                "y": 2443
             }
         }
     }

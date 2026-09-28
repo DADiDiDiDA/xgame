@@ -3,23 +3,36 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790308544392,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\购物中心日常领取.json",
             "savedViewport": {
-                "x": -5853,
-                "y": -734,
-                "zoom": 0.57
+                "x": -3232,
+                "y": -164,
+                "zoom": 0.33
             },
             "filename": "购物中心日常领取",
             "version": "v1.10.1"
         }
     },
+    "$__mpe_external_返回主界面开始_购物中心日常领取": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12424,
+                "y": 2408
+            }
+        }
+    },
     "购物中心日常领取开始": {
         "next": [
-            "进入主界面菜单选项-购物中心日常领取"
+            "进入主界面菜单选项-购物中心日常领取",
+            "[JumpBack]返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10200,
-                "y": 1522
+                "x": 10015,
+                "y": 1679
             }
         }
     },
@@ -41,14 +54,101 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择购物中心购物中心日常领取",
             "[JumpBack]进入主界面菜单选项-购物中心日常领取_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10604,
-                "y": 1489
+                "x": 10447,
+                "y": 1301
+            }
+        }
+    },
+    "进入主界面菜单选项-购物中心日常领取_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    630,
+                    0,
+                    79,
+                    76
+                ],
+                "template": [
+                    "主界面特征1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10839,
+                "y": 1601
+            }
+        }
+    },
+    "选择购物中心免费礼包购物中心日常领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    609,
+                    99,
+                    109,
+                    121
+                ],
+                "template": [
+                    "购物中心待领取奖励图标.png"
+                ],
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择购物中心免费礼包购物中心日常领取_第二次",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11525,
+                "y": 799
+            }
+        }
+    },
+    "选择购物中心免费礼包购物中心日常领取_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    609,
+                    99,
+                    109,
+                    121
+                ],
+                "template": [
+                    "购物中心待领取奖励图标.png"
+                ],
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 11989,
+                "y": 806
             }
         }
     },
@@ -86,70 +186,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11075,
-                "y": 1527
-            }
-        }
-    },
-    "选择购物中心免费礼包购物中心日常领取": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    609,
-                    99,
-                    109,
-                    121
-                ],
-                "template": [
-                    "购物中心待领取奖励图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "[JumpBack]选择购物中心免费礼包购物中心日常领取_第二次",
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11577,
-                "y": 1392
-            }
-        }
-    },
-    "$__mpe_external_返回主界面开始_购物中心日常领取": {
-        "$__mpe_code": {
-            "position": {
-                "x": 12087,
-                "y": 1798
-            }
-        }
-    },
-    "进入主界面菜单选项-购物中心日常领取_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    630,
-                    0,
-                    79,
-                    76
-                ],
-                "template": [
-                    "主界面特征1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 10890,
-                "y": 1950
+                "x": 10838,
+                "y": 1229
             }
         }
     },
@@ -182,33 +220,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 11444,
-                "y": 1760
-            }
-        }
-    },
-    "选择购物中心免费礼包购物中心日常领取_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    609,
-                    99,
-                    109,
-                    121
-                ],
-                "template": [
-                    "购物中心待领取奖励图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 11946,
-                "y": 1317
+                "x": 11497,
+                "y": 1192
             }
         }
     }

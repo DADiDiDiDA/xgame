@@ -1,7 +1,7 @@
 {
     "interface_version": 2,
     "name": "xgame",
-    "description": "xgame自动化脚本 - 每日任务合集",
+    "description": "众神派对自动化脚本 - 每日任务合集",
     "contact": "",
     "license": "MIT",
     "welcome": "",
@@ -90,6 +90,12 @@
             "entry": "领取任务奖励开始",
             "default_check": true,
             "doc": "进入任务界面领取循环任务奖励"
+        },
+        {
+            "name": "📮 领取邮箱",
+            "entry": "领取邮箱开始",
+            "default_check": true,
+            "doc": "进入邮箱领取全部邮件奖励"
         }
     ],
 
@@ -195,7 +201,8 @@
                     "pipeline_override": {
                         "选择刷哪个类型-祭祀神迹": {
                             "next": [
-                                "刷取：克洛诺斯-祭祀神迹"
+                                "刷取：克洛诺斯-祭祀神迹",
+                                "[JumpBack]尝试关闭活动提示"
                             ]
                         }
                     }
@@ -206,7 +213,8 @@
                     "pipeline_override": {
                         "选择刷哪个类型-祭祀神迹": {
                             "next": [
-                                "刷取：阿佩普-祭祀神迹"
+                                "刷取：阿佩普-祭祀神迹",
+                                "[JumpBack]尝试关闭活动提示"
                             ]
                         }
                     }
@@ -217,7 +225,8 @@
                     "pipeline_override": {
                         "选择刷哪个类型-祭祀神迹": {
                             "next": [
-                                "刷取：法芙娜-祭祀神迹"
+                                "刷取：法芙娜-祭祀神迹",
+                                "[JumpBack]尝试关闭活动提示"
                             ]
                         }
                     }
@@ -228,7 +237,8 @@
                     "pipeline_override": {
                         "选择刷哪个类型-祭祀神迹": {
                             "next": [
-                                "刷取：应龙-祭祀神迹"
+                                "刷取：应龙-祭祀神迹",
+                                "[JumpBack]尝试关闭活动提示"
                             ]
                         }
                     }

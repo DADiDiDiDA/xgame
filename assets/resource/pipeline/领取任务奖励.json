@@ -3,86 +3,79 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790308304681,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\领取任务奖励.json",
             "savedViewport": {
-                "x": -2963,
-                "y": -383,
+                "x": -2926,
+                "y": -614,
                 "zoom": 0.57
             },
             "filename": "领取任务奖励",
             "version": "v1.10.1"
         }
     },
-    "领取任务奖励开始": {
-        "next": [
-            "进入任务界面"
-        ],
+    "$__mpe_external_返回主界面开始_领取任务奖励": {
         "$__mpe_code": {
             "position": {
-                "x": 4948,
-                "y": 782
+                "x": 7396,
+                "y": 900
             }
         }
     },
-    "进入任务界面": {
+    "开始领取每日任务奖励-领取任务奖励": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    318,
-                    1167,
-                    85,
-                    56
+                    554,
+                    370,
+                    99,
+                    533
                 ],
                 "expected": [
-                    "任务"
+                    "领奖"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "next": [
-            "进入循环任务分类",
-            "[JumpBack]进入任务界面_第二次"
-        ],
+        "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 5340,
-                "y": 769
+                "x": 6212,
+                "y": 642
             }
         }
     },
-    "进入循环任务分类": {
+    "无可领取的奖励-领取任务奖励": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    332,
-                    1187,
-                    122,
-                    49
+                    543,
+                    363,
+                    117,
+                    79
                 ],
                 "expected": [
-                    "循环任务"
+                    "前往"
                 ]
             }
         },
-        "action": {
-            "type": "Click"
-        },
         "next": [
-            "每日任务已完成",
-            "开始领取每日任务奖励",
-            "[JumpBack]进入循环任务分类_第二次"
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5745,
-                "y": 844
+                "x": 6536,
+                "y": 1726
             }
         }
     },
-    "每日任务已完成": {
+    "每日任务已完成-领取任务奖励": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -102,37 +95,71 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6203,
-                "y": 677
+                "x": 6212,
+                "y": 412
             }
         }
     },
-    "$__mpe_external_返回主界面开始_领取任务奖励": {
-        "$__mpe_code": {
-            "position": {
-                "x": 6961,
-                "y": 762
-            }
-        }
-    },
-    "开始领取每日任务奖励": {
+    "确认领取循环任务积分奖励-领取任务奖励": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
-                "expected": ""
+                "roi": [
+                    147,
+                    174,
+                    551,
+                    106
+                ],
+                "template": [
+                    "待领取循环任务奖励.png"
+                ]
             }
         },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
         "next": [
+            "额外奖励提示",
             "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6177,
-                "y": 1062
+                "x": 6526,
+                "y": 1241
             }
         }
     },
-    "进入任务界面_第二次": {
+    "进入任务界面-领取任务奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    318,
+                    1167,
+                    85,
+                    56
+                ],
+                "expected": [
+                    "任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "进入循环任务分类-领取任务奖励",
+            "[JumpBack]进入任务界面_第二次-领取任务奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5340,
+                "y": 769
+            }
+        }
+    },
+    "进入任务界面_第二次-领取任务奖励": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -157,7 +184,42 @@
             }
         }
     },
-    "进入循环任务分类_第二次": {
+    "进入循环任务分类-领取任务奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    332,
+                    1187,
+                    122,
+                    49
+                ],
+                "expected": [
+                    "循环任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2500,
+        "next": [
+            "每日任务已完成-领取任务奖励",
+            "[JumpBack]开始领取每日任务奖励-领取任务奖励",
+            "[JumpBack]识别缓冲-领取任务",
+            "确认领取循环任务积分奖励-领取任务奖励",
+            "无可领取的奖励-领取任务奖励",
+            "[JumpBack]进入循环任务分类_第二次-领取任务奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5745,
+                "y": 844
+            }
+        }
+    },
+    "进入循环任务分类_第二次-领取任务奖励": {
+        "max_hit": 2,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -177,8 +239,57 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 6028,
-                "y": 1295
+                "x": 6000,
+                "y": 1532
+            }
+        }
+    },
+    "领取任务奖励开始": {
+        "next": [
+            "进入任务界面-领取任务奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4948,
+                "y": 782
+            }
+        }
+    },
+    "额外奖励提示": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    418,
+                    657,
+                    132,
+                    67
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6792,
+                "y": 983
+            }
+        }
+    },
+    "识别缓冲-领取任务": {
+        "max_hit": 3,
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6270,
+                "y": 924
             }
         }
     }
