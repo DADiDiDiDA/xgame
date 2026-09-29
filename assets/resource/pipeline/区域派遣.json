@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -7123,
-                "y": -1010,
-                "zoom": 0.66
+                "x": -5363,
+                "y": -516,
+                "zoom": 0.5
             },
             "filename": "区域派遣",
-            "version": "v2.0.0"
+            "version": "v2.0.3"
         }
     },
     "主界面菜单滑动屏幕-区域派遣": {
@@ -275,7 +275,8 @@
         "next": [
             "剩余次数为0-区域派遣",
             "[JumpBack]判断有没有待领取的奖励",
-            "[JumpBack]判断有没有可派遣的任务"
+            "[JumpBack]判断有没有可派遣的任务",
+            "[JumpBack]领取派遣奖励-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -425,6 +426,7 @@
                     112
                 ],
                 "expected": [
+                    "关闭",
                     "点击"
                 ]
             }
@@ -604,6 +606,7 @@
                     112
                 ],
                 "expected": [
+                    "关闭",
                     "点击"
                 ]
             }
