@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1790677405547,
+            "lastSyncTime": 1790950896194,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\联邦悬赏.json",
             "savedViewport": {
-                "x": -9793,
-                "y": 348,
-                "zoom": 0.57
+                "x": -11382,
+                "y": 379,
+                "zoom": 0.66
             },
             "filename": "联邦悬赏",
-            "version": "v2.0.4"
+            "version": "v2.0.6"
         }
     },
     "$__mpe_anchor_判断需要点击哪个悬赏_联邦悬赏": {
@@ -29,6 +29,64 @@
             "position": {
                 "x": 18861,
                 "y": 390
+            }
+        }
+    },
+    "关闭累计悬赏奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    261,
+                    1168,
+                    216,
+                    74
+                ],
+                "expected": [
+                    "点击",
+                    "关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "[JumpBack]关闭累计悬赏奖励_第二次",
+            "累计悬赏奖励领取结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 18346,
+                "y": -260
+            }
+        }
+    },
+    "关闭累计悬赏奖励_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    261,
+                    1168,
+                    216,
+                    74
+                ],
+                "expected": [
+                    "点击",
+                    "关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 18662,
+                "y": -415
             }
         }
     },
@@ -105,6 +163,61 @@
             "position": {
                 "x": 19097,
                 "y": 1850
+            }
+        }
+    },
+    "寻找是否有可领取的累计悬赏奖励": {
+        "max_hit": 4,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    214,
+                    1037,
+                    451,
+                    119
+                ],
+                "template": [
+                    "联盟悬赏待领取图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "关闭累计悬赏奖励",
+            "[JumpBack]寻找是否有可领取的累计悬赏奖励_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17942,
+                "y": -390
+            }
+        }
+    },
+    "寻找是否有可领取的累计悬赏奖励_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    214,
+                    1037,
+                    451,
+                    119
+                ],
+                "template": [
+                    "联盟悬赏待领取图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 18276,
+                "y": -608
             }
         }
     },
@@ -280,6 +393,14 @@
             "position": {
                 "x": 19538,
                 "y": 1380
+            }
+        }
+    },
+    "累计悬赏奖励领取结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 18756,
+                "y": -98
             }
         }
     },
@@ -734,133 +855,6 @@
             "position": {
                 "x": 17788,
                 "y": 2942
-            }
-        }
-    },
-    "寻找是否有可领取的累计悬赏奖励": {
-        "max_hit": 4,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    214,
-                    1037,
-                    451,
-                    119
-                ],
-                "template": [
-                    "联盟悬赏待领取图标.png"
-                ],
-                "threshold": [
-                    0.8
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "关闭累计悬赏奖励",
-            "[JumpBack]寻找是否有可领取的累计悬赏奖励_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 17942,
-                "y": -390
-            }
-        }
-    },
-    "关闭累计悬赏奖励": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    261,
-                    1168,
-                    216,
-                    74
-                ],
-                "expected": [
-                    "点击",
-                    "关闭"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 1000,
-        "next": [
-            "[JumpBack]关闭累计悬赏奖励_第二次",
-            "累计悬赏奖励领取结束"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 18346,
-                "y": -260
-            }
-        }
-    },
-    "累计悬赏奖励领取结束": {
-        "$__mpe_code": {
-            "position": {
-                "x": 18756,
-                "y": -98
-            }
-        }
-    },
-    "关闭累计悬赏奖励_第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    261,
-                    1168,
-                    216,
-                    74
-                ],
-                "expected": [
-                    "点击",
-                    "关闭"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 18662,
-                "y": -415
-            }
-        }
-    },
-    "寻找是否有可领取的累计悬赏奖励_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    214,
-                    1037,
-                    451,
-                    119
-                ],
-                "template": [
-                    "联盟悬赏待领取图标.png"
-                ],
-                "threshold": [
-                    0.8
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 18276,
-                "y": -608
             }
         }
     }

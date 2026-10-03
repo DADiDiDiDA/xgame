@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1790677239166,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -963,
-                "y": 130,
-                "zoom": 0.44
+                "x": -2866,
+                "y": 475,
+                "zoom": 0.76
             },
             "filename": "返回主界面",
-            "version": "v2.0.4"
+            "version": "v2.0.5"
         }
     },
     "下半部分处理": {
@@ -363,24 +359,34 @@
     },
     "主界面特征3": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    474,
-                    643,
-                    198,
-                    115
+                    635,
+                    88,
+                    63,
+                    431
                 ],
-                "expected": [
-                    "物",
-                    "购"
+                "template": [
+                    "好友图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -32,
+                    0,
+                    0
                 ]
             }
         },
         "$__mpe_code": {
             "position": {
-                "x": 4646,
-                "y": -318
+                "x": 4712,
+                "y": -429
             }
         }
     }
