@@ -1,11 +1,11 @@
 {
     "interface_version": 2,
     "name": "xgame",
-    "description": "众神派对自动化脚本 - 每日任务合集",
+    "description": "众神派对自动化脚本",
     "contact": "",
     "license": "MIT",
     "welcome": "",
-    "version": "0.0.1",
+    "version": "0.1.1",
 
     "controller": [
         {
