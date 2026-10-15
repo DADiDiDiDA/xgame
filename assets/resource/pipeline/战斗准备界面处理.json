@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -8260,
-                "y": -89,
-                "zoom": 0.57
+                "x": -9314,
+                "y": -72,
+                "zoom": 0.65
             },
             "filename": "战斗准备界面处理",
-            "version": "v2.0.0"
+            "version": "v2.1.0"
         }
     },
     "体力不足无法扫荡": {
@@ -63,8 +63,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 15420,
-                "y": 587
+                "x": 15372,
+                "y": 589
             }
         }
     },
@@ -159,6 +159,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 15433,
@@ -184,6 +185,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "快速讨伐结束"
         ],
@@ -212,6 +214,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "确认快捷战斗结果"
         ],
@@ -240,6 +243,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "是否需要跳过战斗",
             "确认快捷战斗结果",
@@ -270,6 +274,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "是否需要跳过战斗",
             "确认快捷战斗结果",
@@ -361,6 +366,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "调整讨伐次数开始"
         ],
@@ -389,6 +395,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 15101,
@@ -414,6 +421,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 14454,
@@ -439,6 +447,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 14477,

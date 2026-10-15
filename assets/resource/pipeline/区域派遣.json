@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -5363,
-                "y": -516,
-                "zoom": 0.5
+                "x": -3233,
+                "y": -260,
+                "zoom": 0.32
             },
             "filename": "区域派遣",
-            "version": "v2.0.3"
+            "version": "v2.1.0"
         }
     },
     "主界面菜单滑动屏幕-区域派遣": {
@@ -35,6 +35,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 10224,
@@ -86,6 +87,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始选择派遣角色",
             "系统推荐派遣角色",
@@ -118,6 +120,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始选择派遣角色",
             "系统推荐派遣角色",
@@ -157,6 +160,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "next": [
             "领取派遣奖励",
             "[JumpBack]判断有没有可领取的任务_判断1_第二次",
@@ -196,6 +200,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "next": [
             "领取派遣奖励",
             "[JumpBack]判断有没有可领取的任务_判断2_第二次",
@@ -229,8 +234,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11324,
-                "y": 1308
+                "x": 11279,
+                "y": 1400
             }
         }
     },
@@ -271,12 +276,13 @@
         }
     },
     "已到达区域探索界面-区域派遣": {
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "剩余次数为0-区域派遣",
             "[JumpBack]判断有没有待领取的奖励",
             "[JumpBack]判断有没有可派遣的任务",
-            "[JumpBack]领取派遣奖励-第二次"
+            "[JumpBack]领取派遣奖励-第二次",
+            "未发现可派遣任务"
         ],
         "$__mpe_code": {
             "position": {
@@ -361,6 +367,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "已到达区域探索界面-区域派遣"
         ],
@@ -397,6 +404,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "next": [
             "已到达区域探索界面-区域派遣"
         ],
@@ -434,6 +442,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]领取派遣奖励-第二次",
             "派遣奖励已领取"
@@ -463,7 +472,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "系统推荐派遣角色",
             "[JumpBack]开始选择派遣角色-第二次"
@@ -522,6 +531,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]系统推荐派遣角色-第二次",
             "[JumpBack]确认派遣开始-第二次",
@@ -579,7 +589,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12501,
@@ -614,6 +624,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12798,
@@ -647,6 +658,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 13422,
@@ -672,6 +684,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12171,
@@ -697,6 +710,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12147,
@@ -730,6 +744,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12090,
@@ -763,10 +778,22 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12008,
                 "y": 1483
+            }
+        }
+    },
+    "未发现可派遣任务": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11183,
+                "y": 2331
             }
         }
     }

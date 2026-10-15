@@ -156,6 +156,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择全部领取邮箱奖励-邮箱_第二次",
             "返回主界面开始"
@@ -185,6 +186,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 2040,

@@ -51,7 +51,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": [
             "[JumpBack]关闭累计悬赏奖励_第二次",
             "累计悬赏奖励领取结束"
@@ -82,7 +82,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 18662,
@@ -155,7 +155,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "选择派遣角色-联邦悬赏"
         ],
@@ -185,6 +185,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "关闭累计悬赏奖励",
             "[JumpBack]寻找是否有可领取的累计悬赏奖励_第二次"
@@ -214,6 +215,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 18276,
@@ -222,7 +224,7 @@
         }
     },
     "开始处理悬赏目标情况-联邦悬赏": {
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "判断剩余悬赏次数-联邦悬赏_第二次",
             "[JumpBack]悬赏目标已完成-联邦悬赏",
@@ -251,7 +253,7 @@
         }
     },
     "开始选择悬赏目标-联邦悬赏": {
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "[JumpBack]寻找是否有可领取的累计悬赏奖励",
             "判断剩余悬赏次数-联邦悬赏",
@@ -362,6 +364,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 19884,
@@ -388,7 +391,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 19538,
@@ -497,6 +500,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "next": [
             "开始选择悬赏目标-联邦悬赏"
         ],
@@ -533,6 +537,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 17970,
@@ -558,6 +563,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始选择悬赏目标-联邦悬赏"
         ],
@@ -586,6 +592,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 18007,
@@ -606,6 +613,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "anchor": {
             "判断需要点击哪个悬赏": "选择悬赏目标：1_第二次"
         },
@@ -631,6 +639,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 18111,
@@ -651,6 +660,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "anchor": {
             "判断需要点击哪个悬赏": "选择悬赏目标：2_第二次"
         },
@@ -676,6 +686,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 18117,
@@ -696,6 +707,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "anchor": {
             "判断需要点击哪个悬赏": "选择悬赏目标：3_第二次"
         },
@@ -721,6 +733,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 18139,
@@ -741,6 +754,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "anchor": {
             "判断需要点击哪个悬赏": "选择悬赏目标：4_第二次"
         },
@@ -766,6 +780,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 18116,
@@ -786,6 +801,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "anchor": {
             "判断需要点击哪个悬赏": "选择悬赏目标：5_第二次"
         },
@@ -811,6 +827,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 18103,
@@ -836,7 +853,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "确认开始派遣-联邦悬赏"
         ],

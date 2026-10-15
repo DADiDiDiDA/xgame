@@ -31,7 +31,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3889,
@@ -182,7 +182,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3903,
@@ -285,7 +285,7 @@
         }
     },
     "返回主界面开始": {
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "[JumpBack]返回过头了吗",
             "判断是否在主界面",
@@ -347,6 +347,7 @@
                 "package": "com.lilithgames.xgame.android.cn"
             }
         },
+        "post_delay": 2000,
         "next": [
             "返回主界面开始"
         ],
@@ -383,6 +384,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4712,

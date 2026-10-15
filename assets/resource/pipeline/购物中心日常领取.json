@@ -113,6 +113,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择购物中心免费礼包购物中心日常领取_第二次",
             "返回主界面开始"
@@ -145,6 +146,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 11989,
