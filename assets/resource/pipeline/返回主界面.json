@@ -97,7 +97,7 @@
         "post_delay": 6000,
         "next": [
             "返回过头了吗",
-            "判断是否在主界面_第二次",
+            "判断是否在主界面-第二次",
             "返回主界面开始"
         ],
         "$__mpe_code": {
@@ -107,7 +107,7 @@
             }
         }
     },
-    "判断是否在主界面_第二次": {
+    "判断是否在主界面-第二次": {
         "recognition": {
             "type": "And",
             "param": {
@@ -217,7 +217,7 @@
             }
         }
     },
-    "按Esc返回主界面_第二次": {
+    "按Esc返回主界面-第二次": {
         "action": {
             "type": "ClickKey",
             "param": {
@@ -294,7 +294,7 @@
             "[JumpBack]左下角返回箭头",
             "[JumpBack]按Esc返回主界面",
             "[JumpBack]错误捕获",
-            "[JumpBack]按Esc返回主界面_第二次"
+            "[JumpBack]按Esc返回主界面-第二次"
         ],
         "$__mpe_code": {
             "position": {
