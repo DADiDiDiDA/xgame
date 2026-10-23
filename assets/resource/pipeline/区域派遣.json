@@ -3,13 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1792729710954,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\xgame\\assets\\resource\\pipeline\\区域派遣.json",
             "savedViewport": {
-                "x": -3233,
-                "y": -260,
-                "zoom": 0.32
+                "x": -3668,
+                "y": -257,
+                "zoom": 0.44
             },
             "filename": "区域派遣",
             "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_返回主界面开始_区域派遣": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12278,
+                "y": 928
+            }
         }
     },
     "主界面菜单滑动屏幕-区域派遣": {
@@ -38,8 +50,46 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 10224,
-                "y": 2076
+                "x": 9665,
+                "y": 1877
+            }
+        }
+    },
+    "判断是否位于区域探索界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    530,
+                    1180,
+                    125,
+                    63
+                ],
+                "expected": [
+                    "区域探索"
+                ]
+            }
+        },
+        "next": [
+            "已到达区域探索界面-区域派遣"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10523,
+                "y": 1041
+            }
+        }
+    },
+    "判断是否位于区域探索界面开始": {
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于区域探索界面",
+            "进入主界面菜单-区域派遣"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10134,
+                "y": 1003
             }
         }
     },
@@ -64,8 +114,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11287,
-                "y": 1957
+                "x": 11278,
+                "y": 1923
             }
         }
     },
@@ -102,6 +152,32 @@
             }
         }
     },
+    "判断有没有可派遣的任务-判断1-第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    541,
+                    1019,
+                    152,
+                    125
+                ],
+                "template": [
+                    "区域探索可派遣图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 12171,
+                "y": 1666
+            }
+        }
+    },
     "判断有没有可派遣的任务-判断2": {
         "recognition": {
             "type": "TemplateMatch",
@@ -131,6 +207,32 @@
             "position": {
                 "x": 11774,
                 "y": 2188
+            }
+        }
+    },
+    "判断有没有可派遣的任务-判断2-第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    227,
+                    148,
+                    486,
+                    863
+                ],
+                "template": [
+                    "区域探索可派遣图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 12147,
+                "y": 2367
             }
         }
     },
@@ -174,6 +276,40 @@
             }
         }
     },
+    "判断有没有可领取的任务-判断1-第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    541,
+                    1019,
+                    152,
+                    125
+                ],
+                "expected": [
+                    "返回"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -76,
+                    -45,
+                    -19,
+                    -5
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 12090,
+                "y": 1020
+            }
+        }
+    },
     "判断有没有可领取的任务-判断2": {
         "recognition": {
             "type": "OCR",
@@ -210,6 +346,40 @@
             "position": {
                 "x": 11761,
                 "y": 1424
+            }
+        }
+    },
+    "判断有没有可领取的任务-判断2-第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    227,
+                    148,
+                    486,
+                    863
+                ],
+                "expected": [
+                    "返回"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -76,
+                    -45,
+                    -19,
+                    -5
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 12008,
+                "y": 1483
             }
         }
     },
@@ -270,8 +440,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9166,
-                "y": 1461
+                "x": 8744,
+                "y": 1095
             }
         }
     },
@@ -288,169 +458,6 @@
             "position": {
                 "x": 10894,
                 "y": 1293
-            }
-        }
-    },
-    "进入主界面菜单-区域派遣": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    627,
-                    4,
-                    81,
-                    72
-                ],
-                "template": [
-                    "主界面特征1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "进入区域探索图标方法一-区域派遣",
-            "进入区域探索图标方法二-区域派遣",
-            "[JumpBack]进入主界面菜单-区域派遣-第二次",
-            "[JumpBack]主界面菜单滑动屏幕-区域派遣"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 9732,
-                "y": 1355
-            }
-        }
-    },
-    "进入主界面菜单-区域派遣-第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    627,
-                    4,
-                    81,
-                    72
-                ],
-                "template": [
-                    "主界面特征1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 10249,
-                "y": 1681
-            }
-        }
-    },
-    "进入区域探索图标方法一-区域派遣": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    46,
-                    125,
-                    624,
-                    716
-                ],
-                "template": [
-                    "区域探索图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "已到达区域探索界面-区域派遣"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 10282,
-                "y": 1007
-            }
-        }
-    },
-    "进入区域探索图标方法二-区域派遣": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    46,
-                    125,
-                    624,
-                    716
-                ],
-                "expected": [
-                    "区域探索"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    -37,
-                    0,
-                    0
-                ]
-            }
-        },
-        "post_delay": 2000,
-        "next": [
-            "已到达区域探索界面-区域派遣"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 10289,
-                "y": 1372
-            }
-        }
-    },
-    "$__mpe_external_返回主界面开始_区域派遣": {
-        "$__mpe_code": {
-            "position": {
-                "x": 12278,
-                "y": 928
-            }
-        }
-    },
-    "领取派遣奖励": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    266,
-                    1146,
-                    221,
-                    112
-                ],
-                "expected": [
-                    "关闭",
-                    "点击"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "[JumpBack]领取派遣奖励-第二次",
-            "派遣奖励已领取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12409,
-                "y": 1275
             }
         }
     },
@@ -484,18 +491,18 @@
             }
         }
     },
-    "系统推荐派遣角色": {
+    "开始选择派遣角色-第二次": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    164,
-                    1180,
-                    131,
-                    66
+                    126,
+                    910,
+                    473,
+                    25
                 ],
                 "expected": [
-                    "推荐"
+                    "点击选择"
                 ]
             }
         },
@@ -503,14 +510,29 @@
             "type": "Click"
         },
         "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 12501,
+                "y": 2356
+            }
+        }
+    },
+    "未发现可派遣任务": {
         "next": [
-            "确认派遣开始",
-            "[JumpBack]返回主界面开始"
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12626,
-                "y": 2039
+                "x": 11183,
+                "y": 2331
+            }
+        }
+    },
+    "派遣奖励已领取": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12796,
+                "y": 1174
             }
         }
     },
@@ -545,6 +567,69 @@
             }
         }
     },
+    "确认派遣开始-第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    540,
+                    1171,
+                    74,
+                    78
+                ],
+                "expected": [
+                    "出发"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13422,
+                "y": 2074
+            }
+        }
+    },
+    "确认派遣结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 13447,
+                "y": 2429
+            }
+        }
+    },
+    "系统推荐派遣角色": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    164,
+                    1180,
+                    131,
+                    66
+                ],
+                "expected": [
+                    "推荐"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认派遣开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12626,
+                "y": 2039
+            }
+        }
+    },
     "系统推荐派遣角色-第二次": {
         "max_hit": 2,
         "recognition": {
@@ -572,18 +657,50 @@
             }
         }
     },
-    "开始选择派遣角色-第二次": {
+    "进入主界面菜单-区域派遣": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    126,
-                    910,
-                    473,
-                    25
+                    627,
+                    4,
+                    81,
+                    72
                 ],
-                "expected": [
-                    "点击选择"
+                "template": [
+                    "主界面特征1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入区域探索图标方法一-区域派遣",
+            "进入区域探索图标方法二-区域派遣",
+            "[JumpBack]进入主界面菜单-区域派遣-第二次",
+            "[JumpBack]主界面菜单滑动屏幕-区域派遣"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9155,
+                "y": 1034
+            }
+        }
+    },
+    "进入主界面菜单-区域派遣-第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    627,
+                    4,
+                    81,
+                    72
+                ],
+                "template": [
+                    "主界面特征1.png"
                 ]
             }
         },
@@ -593,16 +710,105 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 12501,
-                "y": 2356
+                "x": 9711,
+                "y": 1556
             }
         }
     },
-    "派遣奖励已领取": {
+    "进入区域探索图标方法一-区域派遣": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    46,
+                    125,
+                    624,
+                    716
+                ],
+                "template": [
+                    "区域探索图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于区域探索界面开始"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 12796,
-                "y": 1174
+                "x": 9685,
+                "y": 844
+            }
+        }
+    },
+    "进入区域探索图标方法二-区域派遣": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    46,
+                    125,
+                    624,
+                    716
+                ],
+                "expected": [
+                    "区域探索"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -37,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于区域探索界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9706,
+                "y": 1188
+            }
+        }
+    },
+    "领取派遣奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    266,
+                    1146,
+                    221,
+                    112
+                ],
+                "expected": [
+                    "关闭",
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]领取派遣奖励-第二次",
+            "派遣奖励已领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12409,
+                "y": 1275
             }
         }
     },
@@ -630,171 +836,6 @@
             "position": {
                 "x": 12798,
                 "y": 1368
-            }
-        }
-    },
-    "确认派遣结束": {
-        "$__mpe_code": {
-            "position": {
-                "x": 13447,
-                "y": 2429
-            }
-        }
-    },
-    "确认派遣开始-第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    540,
-                    1171,
-                    74,
-                    78
-                ],
-                "expected": [
-                    "出发"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 13422,
-                "y": 2074
-            }
-        }
-    },
-    "判断有没有可派遣的任务-判断1-第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    541,
-                    1019,
-                    152,
-                    125
-                ],
-                "template": [
-                    "区域探索可派遣图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 12171,
-                "y": 1666
-            }
-        }
-    },
-    "判断有没有可派遣的任务-判断2-第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    227,
-                    148,
-                    486,
-                    863
-                ],
-                "template": [
-                    "区域探索可派遣图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 12147,
-                "y": 2367
-            }
-        }
-    },
-    "判断有没有可领取的任务-判断1-第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    541,
-                    1019,
-                    152,
-                    125
-                ],
-                "expected": [
-                    "返回"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -76,
-                    -45,
-                    -19,
-                    -5
-                ]
-            }
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 12090,
-                "y": 1020
-            }
-        }
-    },
-    "判断有没有可领取的任务-判断2-第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    227,
-                    148,
-                    486,
-                    863
-                ],
-                "expected": [
-                    "返回"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -76,
-                    -45,
-                    -19,
-                    -5
-                ]
-            }
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 12008,
-                "y": 1483
-            }
-        }
-    },
-    "未发现可派遣任务": {
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11183,
-                "y": 2331
             }
         }
     }
